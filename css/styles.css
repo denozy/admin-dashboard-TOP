@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@
 }
 body {
     background-color: rgb(209, 203, 203);
+    font-family: Lexend, sans-serif;
 }
 header {
     grid-column: 2 / 4;
@@ -26,9 +29,16 @@ header {
     box-shadow: var(--BOX-SHADOW);
 }
 
-.search-bar {
-    justify-content: center;
+.searchbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
     align-items: center;
+}
+
+.searchbar img {
+    width: 30px;
+
 }
 
 input {
@@ -56,6 +66,9 @@ button {
     align-items: center;
     justify-content: center;
     margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
 }
 
 sidebar {
@@ -73,6 +86,26 @@ color: whitesmoke;
 sidebar li {
     list-style-type: none;
     padding: 10px;
+}
+
+sidebar ul img {
+    width: 25px;
+    display: inline-block;
+
+}
+
+sidebar a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 10px;
+    align-items: center;
+}
+
+sidebar li:hover {
+    background-color: hsla(229, 64%, 44%, 0.63);
+    border-radius: 5px;
 }
 
 article {
